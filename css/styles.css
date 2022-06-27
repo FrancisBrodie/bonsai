@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/bansai-bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(219, 219, 219);
+    overflow: hidden;
+}
+
+.main__menu {
+    width: 100vw;
+    display: flex;
+}
+
+
+.main__menu__logo {
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem .5rem;
+    padding: .5rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 50%;
+}
+
+.main__menu__logo:hover {
+    background-color: beige;
+    transform: rotateZ(360deg);
+}
+
+.main__menu-bar {
+    width: 60vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    padding: 1rem;
+}
+
+.menu-bar__home {
+    padding: .7rem;
+
+}
+
+.menu-bar__features {
+    padding: .7rem;
+}
+
+.menu-bar__products {
+    padding: .7rem;
+
+}
+
+.menu-bar__contacts {
+    padding: .7rem;
+
+}
+
+.menu-bar {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    color: rgb(219, 219, 219);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-bar::after {
+    content: "";
+    width: 0;
+    height: 0.1rem;
+    background-color: rgb(219, 219, 219);
+    display: block;
+    margin: auto;
+    transition: width .2s cubic-bezier(.55, 0, .98, .54);
+}
+
+.menu-bar:hover:after {
+    width: 100%;
+}
+
+
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.search__input {
+    padding: .5rem .4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #3d6746;
+    margin: 0 -.5rem;
+    color: rgb(219, 219, 219);
+}
+
+.search__btn {
+    border: none;
+    cursor: pointer;
+    padding: .5rem .7rem;
+    font-size: 1rem;
+    color: rgb(219, 219, 219);
+
+}
+
+.search__btn--search {
+    background-color: #3d6746;
+}
+
+.search__btn--search:hover {
+    background-color: #1e3720;
+    color: #3d6746;
+
+
+}
+
+.search__btn--shop {
+    background-color: #1e3720;
+}
+
+.search__btn--shop:hover {
+    background-color: #3d6746;
+    color: #1e3720;
+}
+
+
+.main__section {
+    padding: 1rem;
+}
+
+.main__heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+}
+
+.main__para {
+    margin-right: 20rem;
+    padding: 1rem 0;
+}
+
+.main__btn {
+    width: 10rem;
+    height: 3rem;
+    background: rgb(219, 219, 219);
+    color: #384642;
+    border: .1rem solid rgb(219, 219, 219);
+    border-radius: .3rem;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.main__btn--text-one {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: top .2s;
+}
+
+.main__btn--text-two {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: top .2s;
+
+}
+
+.main__btn:hover .main__btn--text-one {
+    top: -100%;
+}
+
+.main__btn:hover .main__btn--text-two {
+    top: 50%;
+}
+
+.overlay {
+    width: 65vw;
+    height: 100vh;
+    background-color: rgba(14, 21, 16, 0.7);
+    background-blend-mode: soft-light;
+}
