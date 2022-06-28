@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:wght@400;500&display=swap');
 
 body {
     margin: 0;
@@ -34,8 +34,8 @@ body {
 
 .main__menu__logo:hover {
     background-color: beige;
-    transform: rotateZ(360deg);
 }
+
 
 .main__menu-bar {
     width: 60vw;
@@ -139,6 +139,9 @@ body {
     color: #1e3720;
 }
 
+.main {
+    display: flex;
+}
 
 .main__section {
     padding: 1rem;
@@ -146,7 +149,13 @@ body {
 
 .main__heading {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 3rem;
+    padding: -1rem 0;
+}
+
+.main__heading--1 {
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 .main__para {
@@ -200,4 +209,141 @@ body {
     height: 100vh;
     background-color: rgba(14, 21, 16, 0.7);
     background-blend-mode: soft-light;
+}
+
+.banner {
+    background-color: #1f2b20;
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgb(219, 219, 219);
+    padding: 1rem 0;
+}
+
+.banner i {
+    font-size: 2rem;
+    color: #3d6746;
+}
+
+.banner h3 {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner__dilivery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.banner__dilivery i {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.banner__dilivery h3 {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-start;
+    padding-top: 1rem;
+
+}
+
+.banner__dilivery p {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-end;
+
+}
+
+.banner__guarantee {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.banner__guarantee i {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.banner__guarantee h3 {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-start;
+    padding-top: 1.2rem;
+}
+
+.banner__guarantee p {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: center;
+}
+
+.banner__support {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.banner__support i {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.banner__support h3 {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-start;
+    padding-top: 1rem;
+
+}
+
+.banner__support p {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-end;
+}
+
+.banner__gifts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.banner__gifts i {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.banner__gifts h3 {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-start;
+    padding-top: 1rem;
+
+}
+
+.banner__gifts p {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: flex-end;
 }
